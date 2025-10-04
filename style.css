@@ -214,7 +214,7 @@
  main {
    display: flex;
    flex-direction: column;
-   min-block-size: calc(100vh - 1rem);
+   min-block-size: calc(100dvh - 1rem);
    padding: 0;
  }
 
