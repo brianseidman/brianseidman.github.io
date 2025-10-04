@@ -22,12 +22,27 @@
    color-scheme: light dark;
  }
 
+ /* ===== THEME ===== */
+ :root {
+   --text-light: #222;
+   --background-light: #FFF;
+   --button-background-light: oklch(0.5737 0.1797 293.97);
+   --button-foreground: white;
+
+   /* Nord */
+   /* --text-dark: #D8DEE9;
+   --background-dark: #3B4252;
+   --button-background-dark: #B48EAD; */
+
+
+   /* Dracula */
+   --text-dark: oklch(0.9965 0.0017 247.84);
+   --background-dark: rgb(65, 69, 88);
+   --button-background-dark: oklch(0.6775 0.1815 288.17);
+ }
+
  /* ===== BASE STYLES ===== */
  body {
-   --text-light: #222;
-   --text-dark: #D8DEE9;
-   --background-light: #FFF;
-   --background-dark: #3B4252;
    color: light-dark(var(--text-light), var(--text-dark));
    background-color: light-dark(var(--background-light), var(--background-dark));
  }
@@ -185,8 +200,8 @@
  }
 
  .button:hover {
-   background-color: light-dark(#815CD6, #B48EAD);
-   color: white;
+   background-color: light-dark(var(--button-background-light), var(--button-background-dark));
+   color: var(--button-foreground);
  }
 
  .button:hover::after {
