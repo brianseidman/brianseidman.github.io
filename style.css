@@ -110,12 +110,12 @@
  }
 
  .center.attributes {
-   max-width: 47ch;
+   --max-inline-size: 47ch;
    display: block;
  }
 
  .center.callout {
-   max-width: 45ch;
+   --max-inline-size: 45ch;
  }
 
  .stack {
